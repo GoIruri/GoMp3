@@ -54,7 +54,6 @@ func main() {
 		if !isDropped {
 			drawDropzone(windowWidth, windowHeight)
 		} else {
-
 			select {
 			case <-done:
 				isDropped = false
@@ -68,9 +67,7 @@ func main() {
 					rl.DrawRectangleGradientV(int32(i)*columnWidth, windowHeight-int32(s), columnWidth, int32(s), rl.Orange, rl.Green)
 					rl.DrawRectangleLines(int32(i)*columnWidth, windowHeight-int32(s), columnWidth, int32(s), rl.Black)
 				}
-
 			}
-
 		}
 		rl.EndDrawing()
 	}
